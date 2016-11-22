@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://nominatim.openstreetmap.org/search?city=belfort&email=sebastien.gadot%40utbm.fr&format=json&limit=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Nominatim Ruby Gem 0.0.6
+      Accept-language:
+      - en
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Tue, 18 Oct 2016 13:38:56 GMT
+      server:
+      - Apache/2.4.18 (Ubuntu)
+      access-control-allow-origin:
+      - "*"
+      access-control-allow-methods:
+      - OPTIONS,GET
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOiIxNTg2MzM1NzMiLCJsaWNlbmNlIjoiRGF0YSDCqSBP
+        cGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6XC9c
+        L3d3dy5vcGVuc3RyZWV0bWFwLm9yZ1wvY29weXJpZ2h0Iiwib3NtX3R5cGUi
+        OiJyZWxhdGlvbiIsIm9zbV9pZCI6Ijc1NjE4IiwiYm91bmRpbmdib3giOlsi
+        NDcuNjIwMzM2IiwiNDcuNjcxMzA1NyIsIjYuNzg3MjE0MyIsIjYuODk0ODcw
+        NyJdLCJsYXQiOiI0Ny42Mzc5NTk5IiwibG9uIjoiNi44NjI4OTQyIiwiZGlz
+        cGxheV9uYW1lIjoiQmVsZm9ydCwgVGVycml0b2lyZS1kZS1CZWxmb3J0LCBC
+        b3VyZ29nbmUtRnJhbmNoZS1Db210w6ksIDkwMDAwLCBGcmFuY2UiLCJjbGFz
+        cyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwiaW1wb3J0
+        YW5jZSI6MC42ODE2NDY0Nzc5NTI1MywiaWNvbiI6Imh0dHA6XC9cL25vbWlu
+        YXRpbS5vcGVuc3RyZWV0bWFwLm9yZ1wvaW1hZ2VzXC9tYXBpY29uc1wvcG9p
+        X2JvdW5kYXJ5X2FkbWluaXN0cmF0aXZlLnAuMjAucG5nIn1d
+    http_version: 
+  recorded_at: Tue, 18 Oct 2016 13:38:56 GMT
+recorded_with: VCR 3.0.3

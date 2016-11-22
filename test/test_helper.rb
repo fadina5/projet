@@ -4,14 +4,12 @@ require 'rails/test_help'
 
 VCR.configure do |config|
   config.cassette_library_dir = "fixtures/vcr_cassettes"
-  config.hook_into :faraday
+  config.hook_into :faraday # or :fakeweb
 end
-
 
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
-  
 end
