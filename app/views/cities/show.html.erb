@@ -15,5 +15,10 @@
   <%= @city.lon %>
 </p>
 
+<p>
+   <strong>Weather:</strong>
+  <%= @city.weather %>
+</p>
+
 <%= link_to 'Edit', edit_city_path(@city) %> |
 <%= link_to 'Back', cities_path %>

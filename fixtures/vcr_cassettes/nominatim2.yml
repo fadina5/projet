@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://nominatim.openstreetmap.org/search?city=MyString&email=sebastien.gadot%40utbm.fr&format=json&limit=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Nominatim Ruby Gem 0.0.6
+      Accept-language:
+      - en
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      date:
+      - Tue, 18 Oct 2016 13:38:56 GMT
+      server:
+      - Apache/2.4.18 (Ubuntu)
+      access-control-allow-origin:
+      - "*"
+      access-control-allow-methods:
+      - OPTIONS,GET
+      connection:
+      - close
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Tue, 18 Oct 2016 13:38:56 GMT
+recorded_with: VCR 3.0.3

@@ -5,7 +5,10 @@ ruby '2.3.1'
 gem 'rails', '4.1.6'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '>= 3.2'
+
+gem 'bootstrap-sass', '~> 3.3.6'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -27,10 +30,14 @@ group :development, :test do
   gem 'spring'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  gem 'vcr', '~> 3.0', '>= 3.0.3'
 end
 
 # geocoding 
 gem 'nominatim', '~> 0.0.5'
+
+# weather API
+gem 'forecast_io', '~> 2.0'
 
 gem 'pg', '~> 0.18.4', group: :production
 

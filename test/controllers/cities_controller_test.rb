@@ -18,15 +18,19 @@ class CitiesControllerTest < ActionController::TestCase
 
   test "should create city" do
     assert_difference('City.count') do
-      post :create, city: { lat: @city.lat, lon: @city.lon, name: @city.name }
+      VCR.use_cassette("nominatim1") do
+       post :create, city: { lat: @city.lat, lon: @city.lon, name: @city.name }
+      end
     end
 
     assert_redirected_to city_path(assigns(:city))
   end
 
   test "should show city" do
-    get :show, id: @city
-    assert_response :success
+    VCR.use_cassette('weather') do
+      get :show, id: @city
+      assert_response :success
+    end
   end
 
   test "should get edit" do
@@ -35,7 +39,9 @@ class CitiesControllerTest < ActionController::TestCase
   end
 
   test "should update city" do
-    patch :update, id: @city, city: { lat: @city.lat, lon: @city.lon, name: @city.name }
+    VCR.use_cassette("nominatim1") do
+      patch :update, id: @city, city: { lat: @city.lat, lon: @city.lon, name: @city.name }
+    end
     assert_redirected_to city_path(assigns(:city))
   end
 
