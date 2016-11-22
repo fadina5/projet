@@ -8,3 +8,6 @@ deploy:
   app: lpa2
   on:
     repo: LPA2-Automne2016/projet
+addons:
+    code_climate:
+        repo_token: 3b417dd98466152859c6b9a80500bb00cc91dd3b3cc38d14b6194df16527e81c
